@@ -4,19 +4,8 @@ import ProjectActions from "../../molecules/ProjectActions";
 
 const ProjectCard = ({ project }) => {
   return (
-    <article
-      className="
-        flex
-        max-w-md
-        flex-col
-        overflow-hidden
-        rounded-xl
-        border
-        border-border
-        bg-surface
-      "
-    >
-      <div className="aspect-16/10 bg-primary-deep">
+    <article className="flex max-w-md flex-col rounded-xl border border-border bg-surface">
+      <div className="aspect-16/10 overflow-hidden rounded-t-xl bg-primary-deep">
         <img
           src={project.image}
           alt={`Captura del sitio de ${project.title}`}

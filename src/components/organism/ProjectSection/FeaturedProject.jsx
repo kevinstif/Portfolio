@@ -11,7 +11,6 @@ const FeaturedProject = ({ project }) => {
         grid
         grid-cols-1
         items-stretch
-        overflow-hidden
         rounded-xl
         border
         border-border
@@ -51,7 +50,7 @@ const FeaturedProject = ({ project }) => {
         </div>
       </div>
 
-      <div className="order-1 aspect-16/10 bg-primary-deep md:order-2">
+      <div className="order-1 aspect-16/10 overflow-hidden bg-primary-deep md:order-2">
         <img
           src={project.image}
           alt={`Captura del sitio de ${project.title}`}
