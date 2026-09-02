@@ -4,6 +4,7 @@ import AboutSection from "../components/organism/AboutSection/AboutSection";
 import GlowDivider from "../components/atoms/GlowDivider";
 import SkillsSection from "../components/organism/SkillsSection/SkillsSection";
 import ProjectSection from "../components/organism/ProjectSection/ProjectSection";
+import ExperienceSection from "../components/organism/ExperienceSection/ExperienceSection";
 
 const Portfolio = () => {
 
@@ -17,6 +18,8 @@ const Portfolio = () => {
       <SkillsSection />
       <GlowDivider />
       <ProjectSection />
+      <GlowDivider />
+      <ExperienceSection />
     </div>
   );
 };

@@ -8,19 +8,19 @@ export const navigationItems = [
     href: "#about",
   },
   {
-    label: "Habilidades Técnicas",
+    label: "Habilidades",
     href: "#skills",
   },
   {
-    label: "Proyectos Principales",
+    label: "Proyectos",
     href: "#projects",
   },
   {
-    label: "Experiencia Laboral",
+    label: "Experiencia",
     href: "#experience",
   },
   {
-    label: "Formación Académica",
+    label: "Formación",
     href: "#education",
   },
   {

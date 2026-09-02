@@ -34,6 +34,13 @@ export const skillCategories = [
           "Lenguaje principal utilizado para desarrollar aplicaciones y servicios backend.",
         experience: "+2 años",
       },
+      {
+        iconClass: "devicon-java-plain colored",
+        name: "Java",
+        description:
+          "Lenguaje principal utilizado para desarrollar aplicaciones y servicios backend.",
+        experience: "Proyectos Personales",
+      },
     ],
   },
 
