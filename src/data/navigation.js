@@ -20,7 +20,7 @@ export const navigationItems = [
     href: "#experience",
   },
   {
-    label: "Formación",
+    label: "Educación",
     href: "#education",
   },
   {

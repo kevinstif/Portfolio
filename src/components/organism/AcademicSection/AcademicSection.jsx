@@ -5,7 +5,7 @@ import academicData from "../../../data/adacademic";
 const AcademicSection = () => {
   return (
     <section
-      id="academic"
+      id="education"
       className="
         flex
         min-h-screen
@@ -24,7 +24,7 @@ const AcademicSection = () => {
           md:max-w-7xl
         "
       >
-        <SectionTitle>Formación Académica</SectionTitle>
+        <SectionTitle>Educación</SectionTitle>
 
         <AcademicList academicData={academicData} />
       </div>
