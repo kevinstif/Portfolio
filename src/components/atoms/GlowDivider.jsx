@@ -1,6 +1,6 @@
 const GlowDivider = () => {
   return (
-    <div className="relative mt-8 h-px w-full">
+    <div className="relative  h-px w-full">
       <div
         className="
           absolute inset-0
