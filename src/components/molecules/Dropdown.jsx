@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import PrimaryButton from "../atoms/PrimaryButton";
 
-const Dropdown = ({ label = "Dropdown button", items = [], onSelect }) => {
+const Dropdown = ({
+  label = "Dropdown button",
+  items = [],
+  onSelect,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const dropdownRef = useRef(null);
 
   const handleToggle = () => {
     setIsOpen((current) => !current);
@@ -14,8 +20,34 @@ const Dropdown = ({ label = "Dropdown button", items = [], onSelect }) => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener(
+      "mousedown",
+      handleClickOutside
+    );
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+    };
+  }, []);
+
   return (
-    <div className="relative inline-block">
+    <div
+      ref={dropdownRef}
+      className="relative inline-block"
+    >
       <PrimaryButton
         type="button"
         onClick={handleToggle}
@@ -66,7 +98,10 @@ const Dropdown = ({ label = "Dropdown button", items = [], onSelect }) => {
             shadow-lg
           "
         >
-          <ul className="p-2 text-sm font-medium text-text" role="menu">
+          <ul
+            className="p-2 text-sm font-medium text-text"
+            role="menu"
+          >
             {items.map((item, index) => (
               <li key={index}>
                 <button
