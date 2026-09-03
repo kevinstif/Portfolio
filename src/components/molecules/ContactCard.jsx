@@ -10,7 +10,7 @@ const ContactCard = () => {
         rounded-2xl
         border
         border-border
-        bg-base
+        bg-surface
       "
     >
       <div

@@ -10,7 +10,7 @@ const ContactCodeBlock = () => {
         justify-center
         border-l
         border-border
-        bg-primary-deep
+        bg-console-bg
         md:flex
       "
     >
@@ -19,26 +19,28 @@ const ContactCodeBlock = () => {
           font-mono
           text-sm
           leading-7
-          text-muted
+          text-console-var
         "
       >
-        <p>
-          <span className="text-accent">const</span> developer = {"{"}
+        <p className="flex gap-2">
+          <span className="text-console-ref">const</span>
+          <span>developer =</span>
+          <span className="text-white">{"{"}</span>
         </p>
 
         <p className="pl-4">
-          backend: <span className="text-text">true</span>,
+          backend: <span className="text-console-text">true</span>,
         </p>
 
         <p className="pl-4">
-          frontend: <span className="text-text">true</span>,
+          frontend: <span className="text-console-text">true</span>,
         </p>
 
         <p className="pl-4">
-          available: <span className="text-text">true</span>
+          available: <span className="text-console-text">true</span>
         </p>
 
-        <p>{"}"}</p>
+        <p className="text-white">{"}"}</p>
       </div>
     </div>
   );

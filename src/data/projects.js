@@ -4,7 +4,7 @@ export const main = {
   description:
     "Teacher Finder simplifica la búsqueda de empleo para docentes y la contratación de talento para instituciones educativas. Además, los profesores pueden crear un video de presentación que recibe análisis de IA para su mejora. Fue, desarrollada por un equipo de 8 personas para su versión web y móvil, participé en el equipo de desarrollo backend conformado por 2 personas.",
   technologies: [
-    { name: "Angular", icon: "devicon-angular-plain colored" },
+    { name: "Angular", icon: "devicon-angularjs-plain colored" },
     { name: "Spring", icon: "devicon-spring-original colored" },
     { name: "MySQL", icon: "devicon-mysql-original colored" },
     { name: "TypeScript", icon: "devicon-typescript-plain colored" },

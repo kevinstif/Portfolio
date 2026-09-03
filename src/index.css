@@ -1,13 +1,40 @@
 @import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
-@theme {
-  --color-background: #090D12;
-  --color-surface: #111823;
-  --color-primary-deep: #16385F;
-  --color-primary: #2F6FED;
-  --color-accent: #22D9A3;
-  --color-border: #223047;
 
-  --color-text: #E8EDF4;
-  --color-muted: #7C8798;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-primary-deep: var(--primary-deep);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-console-bg: var(--sg, #001628);
+  --color-console-ref: var(--sg, #00C8FF);
+  --color-console-var: var(--sg, #6F9FE2);
+  --color-console-text: var(--sg, #E8EDF4);
+}
+
+:root {
+  --background: #E7EDF6;
+  --surface: #FFFFFF;
+  --primary-deep: #0F2E56;
+  --primary: #2557D6;
+  --accent: #0EA57F;
+  --border: #B9C6DA;
+  --text: #0B1220;
+  --muted: #5B6472;
+}
+
+.dark {
+  --background: #090D12;
+  --surface: #111823;
+  --primary-deep: #16385F;
+  --primary: #2F6FED;
+  --accent: #22D9A3;
+  --border: #223047;
+  --text: #E8EDF4;
+  --muted: #7C8798;
 }

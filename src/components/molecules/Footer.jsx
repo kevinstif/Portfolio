@@ -2,23 +2,30 @@ const Footer = () => {
   return (
     <footer
       className="
-        mt-8
         flex
-        flex-col
         items-center
-        justify-between
-        gap-3
-        border-t
-        border-border
-        pt-6
-        text-sm
-        text-muted
-        md:flex-row
+        justify-center
+        bg-surface
       "
     >
-      <span>© 2026 Kevin Sánchez</span>
+      <div
+        className="
+          flex
+          flex-row
+          justify-between
+          mx-auto
+          w-full
+          max-w-md
+          px-4
+          py-20
+          md:max-w-7xl
+          text-muted
+        "
+      >
+        <span>© 2026 Kevin Stif Sánchez Urbina</span>
 
-      <span>Diseñado y desarrollado con React</span>
+        <span>Diseñado y desarrollado con React</span>
+      </div>
     </footer>
   );
 };

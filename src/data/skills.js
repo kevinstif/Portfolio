@@ -58,7 +58,7 @@ export const skillCategories = [
         experience: "+1 año",
       },
       {
-        iconClass: "devicon-angular-plain colored",
+        iconClass: "devicon-angularjs-plain colored",
         name: "Angular",
         description: "Framework para construir aplicaciones web dinámicas.",
         experience: "7 meses",

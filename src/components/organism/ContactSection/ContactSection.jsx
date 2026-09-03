@@ -1,6 +1,5 @@
 import SectionTitle from "../../atoms/SectionTitle";
 import ContactCard from "../../molecules/ContactCard";
-import Footer from "../../molecules/Footer";
 
 const ContactSection = () => {
   return (
@@ -10,7 +9,7 @@ const ContactSection = () => {
         flex
         items-center
         justify-center
-        bg-surface
+        bg-background
       "
     >
       <div
@@ -28,8 +27,6 @@ const ContactSection = () => {
         </SectionTitle>
 
         <ContactCard />
-
-        <Footer />
       </div>
     </section>
   );

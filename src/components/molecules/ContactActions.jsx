@@ -12,7 +12,7 @@ const ContactActions = () => {
           px-6
           py-3
           font-medium
-          text-text
+          text-white
           transition
           duration-300
           hover:brightness-110

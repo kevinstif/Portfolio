@@ -1,4 +1,5 @@
 import Navbar from "../components/organism/Navbar/Navbar";
+import Footer from "../components/molecules/Footer";
 import HeroSection from "../components/organism/HeroSection/HeroSection";
 import AboutSection from "../components/organism/AboutSection/AboutSection";
 import GlowDivider from "../components/atoms/GlowDivider";
@@ -24,7 +25,9 @@ const Portfolio = () => {
       <ExperienceSection />
       <GlowDivider />
       <AcademicSection />
+      <GlowDivider />
       <ContactSection />
+      <Footer />
     </div>
   );
 };
