@@ -5,7 +5,7 @@ import LanguageSelector from "../../molecules/LanguageSelector";
 import MenuButton from "../../atoms/MenuButton";
 import NavigationMenu from "../../molecules/NavigationMenu";
 
-import logo from "../../../assets/profile.jpg";
+import logo from "../../../assets/brand.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,8 +45,8 @@ const Navbar = () => {
       >
         <Brand
           src={logo}
-          alt="Kevin Sánchez"
-          name="Kevin Sánchez"
+          alt="Kevin Stif"
+          name="Kevin Stif"
         />
 
         <div

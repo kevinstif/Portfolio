@@ -91,19 +91,19 @@ export const skillCategories = [
         iconClass: "devicon-microsoftsqlserver-plain colored",
         name: "SQL Server",
         description:
-          "Base de datos relacional utilizada principalmente en aplicaciones empresariales.",
+          "Base de datos relacional",
         experience: "+2 años",
       },
       {
         iconClass: "devicon-mysql-plain colored",
         name: "MySQL",
-        description: "Sistema de base de datos relacional.",
+        description: "Base de datos relacional.",
         experience: "1 año",
       },
       {
         iconClass: "devicon-postgresql-plain colored",
         name: "PostgreSQL",
-        description: "Sistema avanzado de base de datos relacional.",
+        description: "Base de datos relacional.",
         experience: "4 meses",
       },
       {

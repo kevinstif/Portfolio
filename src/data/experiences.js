@@ -4,22 +4,21 @@ export const companyExperiences = [
     company: "Global Terra",
     period: "Enero 2020 - Presente",
     responsibilities:
-      "Desarrollo de sistema de calculo de nominas CTS y Utilidades masivo, diseño y migración de proyecto frontend a microfrontend, desarrollo de reporteria dinamica y generación de certificados, diseño y migración de microservicios single tenancy a multi tenancy hibrido, mantenimiento y gestión de bases de datos tenant y central, gestión de migraciones y modulo interno para desarrollador para la gestión de creación y migración de base de datos tenant",
+      "Automatización de procesos de nómina mediante cálculos masivos de CTS y Utilidades. Implementación de reportes dinámicos y generación de certificados. Evolución de la arquitectura hacia microservicios y multi-tenancy híbrido, mejorando la escalabilidad y administración de múltiples clientes.",
   },
-
   {
     title: "Desarrollador Full Stack",
     company: "Global Factoring",
     period: "Julio 2024 - Febrero 2025",
     responsibilities:
-      "Automatización de consultas programadas a apis externas reduciendo tiempos de labor del area de analisis financiero de clientes en varias horas, desarrollo de sistema de notificación via correo electrónico, desarrollo de sistema de generación de factoring individual y masivo, desarrollo de sistema de generación de documentos PDF de factoring y prestamos, desarrollo de sistema de generación de reportes y estadísticas, desarrollo de sistema de gestión de usuarios y roles",
+      "Automatización de consultas financieras que redujo varias horas de trabajo operativo. Desarrollo de procesos para factoring y préstamos individuales y masivos, generación de documentos y reportes, además de gestión de usuarios, roles y notificaciones.",
   },
   {
     title: "Desarrollador Backend",
     company: "Geor",
     period: "Marzo 2023 - Diciembre 2023",
     responsibilities:
-      "Implementación de apis de mensajeria Masiva, configuración e integración con microservición de conexión a WhatsApp, gestión de base de datos y optimización de consultas, desarrollo de funcionalidades de ejecución automatica de procesos programados, implementación de comunicación en tiempo real con la app (websocket), liderazgo del equipo de desarrollo del modulo de mensajeria.",
+      "Desarrollo de soluciones de mensajería masiva e integración con WhatsApp. Automatización de procesos programados y comunicación en tiempo real. Optimización de bases de datos y liderazgo técnico del equipo responsable del módulo de mensajería.",
   },
 ];
 
@@ -29,13 +28,13 @@ export const freelanceExperiences = [
     company: "Laboratorio de Periodismo de datos y Multiformatos (El Comercio - UPC)",
     period: "Marzo 2024 - Julio 2024",
     responsibilities:
-      "Se realizó un sistema de reconocimiento de emociones en tiempo real. Asi mismo se implemento un sistema de reconocimiento y clasificación de expresiones faciales para crear el dataset de entrenamiento del sistema principal.",
+      "Desarrollo de un sistema de IA para reconocimiento de emociones en tiempo real. Implementación de un sistema de detección y clasificación de expresiones faciales para generar el dataset utilizado en el entrenamiento del modelo principal.",
   },
   {
     title: "Desarrollador Full Stack",
     company: "CRM Leads",
     period: "Octubre 2025 - Enero 2026",
     responsibilities:
-      "Desarrollo de un sistema CRM para la gestión de clientes, incluyendo modulos de gestión de clientes, carga masiva de datos, modulo de seguridad integrado con roles y permisos, y un sistema de reportes y estadísticas.",
+      "Desarrollo de un CRM para centralizar la gestión de clientes. Implementación de carga masiva, reportes y estadísticas, junto con un módulo de seguridad basado en roles y permisos, reduciendo tareas manuales y facilitando el acceso a la información.",
   },
 ];

@@ -1,5 +1,5 @@
 import ProfileImage from "../../atoms/ProfileImage";
-import image from "../../../assets/profile.jpg";
+import image from "../../../assets/profile.avif";
 import SectionTitle from "../../atoms/SectionTitle";
 import AboutCard from "../../molecules/AboutCard";
 

@@ -1,6 +1,6 @@
 import HeroContent from "../../molecules/HeroContent";
 import ProfileImage from "../../atoms/ProfileImage";
-import image from "../../../assets/profile.jpg";
+import image from "../../../assets/profile.avif";
 
 const HeroSection = () => {
 
