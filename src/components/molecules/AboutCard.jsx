@@ -1,10 +1,7 @@
 import GlowDivider from "../atoms/GlowDivider";
 import PrimaryButton from "../atoms/PrimaryButton";
 
-const AboutCard = ({
-  description,
-  onDownloadCV,
-}) => {
+const AboutCard = ({ description, onDownloadCV }) => {
   return (
     <div
       className="
@@ -16,18 +13,15 @@ const AboutCard = ({
         p-8
       "
     >
-      <p className="text-md leading-relaxed text-text">
-        {description}
-      </p>
+      <p className="text-md leading-relaxed text-text mb-8">{description}</p>
 
       <GlowDivider />
 
-      <PrimaryButton
-        className="mt-8"
-        onClick={onDownloadCV}
-      >
-        Descargar CV
-      </PrimaryButton>
+      <div className="flex justify-end">
+        <PrimaryButton className="mt-8" onClick={onDownloadCV}>
+          Descargar CV
+        </PrimaryButton>
+      </div>
     </div>
   );
 };
