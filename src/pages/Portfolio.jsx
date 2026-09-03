@@ -12,7 +12,7 @@ import ContactSection from "../components/organism/ContactSection/ContactSection
 const Portfolio = () => {
 
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-background">
       <Navbar />
       <HeroSection />
       <GlowDivider />
