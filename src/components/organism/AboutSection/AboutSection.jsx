@@ -10,8 +10,10 @@ const AboutSection = () => {
   const handleDownloadCV = () => {
   const link = document.createElement("a");
 
-  link.href = "/Kevin_Stif_CV.pdf";
+  link.href = "/Portfolio/Kevin_Stif_CV.pdf";
   link.download = "Kevin_Stif_CV.pdf";
+
+  console.log("Descargando CV desde:", link.href);
 
   document.body.appendChild(link);
   link.click();
