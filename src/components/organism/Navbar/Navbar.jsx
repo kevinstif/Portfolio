@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ThemeToggle from "../../atoms/ThemeToggle";
 
 import Brand from "../../molecules/Brand";
 import LanguageSelector from "../../molecules/LanguageSelector";
@@ -43,11 +44,9 @@ const Navbar = () => {
           p-4
         "
       >
-        <Brand
-          src={logo}
-          alt="Kevin Stif"
-          name="Kevin Stif"
-        />
+        <Brand src={logo} alt="Kevin Stif" name="Kevin Stif" />
+
+        <NavigationMenu isOpen={isMenuOpen} onNavigate={handleNavigation} />
 
         <div
           className="
@@ -57,18 +56,14 @@ const Navbar = () => {
             md:order-2
           "
         >
-          <LanguageSelector />
+          {/* 
+            <LanguageSelector />
+          */}
 
-          <MenuButton
-            isOpen={isMenuOpen}
-            onClick={handleMenuToggle}
-          />
+          <ThemeToggle />
+
+          <MenuButton isOpen={isMenuOpen} onClick={handleMenuToggle} />
         </div>
-
-        <NavigationMenu
-          isOpen={isMenuOpen}
-          onNavigate={handleNavigation}
-        />
       </div>
     </nav>
   );
