@@ -18,14 +18,44 @@ const FeaturedProject = ({ project }) => {
         md:grid-cols-2
       "
     >
-      <div className="order-2 flex flex-col gap-4 p-5 md:order-1">
-        <div className="flex items-start justify-between gap-3">
+      {/* CONTENT */}
+
+      <div
+        className="
+          order-2
+          flex
+          flex-col
+          gap-4
+          p-4
+          sm:p-5
+          md:order-1
+        "
+      >
+        <div
+          className="
+            flex
+            flex-col
+            items-start
+            gap-2
+            sm:flex-row
+            sm:items-center
+            sm:justify-between
+            sm:gap-3
+          "
+        >
           <h3 className="text-xl font-semibold text-text">{project.title}</h3>
 
           <ProjectStatus>{project.status}</ProjectStatus>
         </div>
 
-        <p className="line-clamp-4 text-sm leading-relaxed text-muted">
+        <p
+          className="
+            line-clamp-5
+            text-sm
+            leading-relaxed
+            text-muted
+          "
+        >
           {project.description}
         </p>
 
@@ -33,24 +63,40 @@ const FeaturedProject = ({ project }) => {
           className="
             mt-auto
             flex
-            items-center
-            justify-between
+            flex-col
+            items-stretch
             gap-3
             border-t
             border-border
             pt-3
+            sm:flex-row
+            sm:items-center
+            sm:justify-between
           "
         >
           <TechnologyIcons technologies={project.technologies} size="lg" />
 
-          <ProjectActions
-            liveUrl={project.links.live}
-            githubItems={project.links.github}
-          />
+          <div className="self-end mt-4 sm:mt-auto sm:self-auto">
+            <ProjectActions
+              liveUrl={project.links.live}
+              githubItems={project.links.github}
+            />
+          </div>
         </div>
       </div>
 
-      <div className="order-1 aspect-16/10 overflow-hidden bg-primary-deep md:order-2">
+      {/* IMAGE */}
+
+      <div
+        className="
+          order-1
+          aspect-16/10
+          overflow-hidden
+          bg-primary-deep
+          md:order-2
+          md:aspect-auto
+        "
+      >
         <img
           src={project.image}
           alt={`Captura del sitio de ${project.title}`}
