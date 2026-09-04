@@ -41,13 +41,25 @@ const Navbar = () => {
           flex-wrap
           items-center
           justify-between
-          p-4
+          px-4
+          py-3
         "
       >
-        <Brand src={logo} alt="Kevin Stif" name="Kevin Stif" />
+        <Brand
+          src={logo}
+          alt="Kevin Stif"
+          name="Kevin Stif"
+        />
 
-        <NavigationMenu isOpen={isMenuOpen} onNavigate={handleNavigation} />
+        {/* Desktop navigation */}
+        <div className="hidden md:block md:order-1">
+          <NavigationMenu
+            isOpen={true}
+            onNavigate={handleNavigation}
+          />
+        </div>
 
+        {/* Controls */}
         <div
           className="
             flex
@@ -56,13 +68,33 @@ const Navbar = () => {
             md:order-2
           "
         >
-          {/* 
+          {/*
             <LanguageSelector />
           */}
 
           <ThemeToggle />
 
-          <MenuButton isOpen={isMenuOpen} onClick={handleMenuToggle} />
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <MenuButton
+              isOpen={isMenuOpen}
+              onClick={handleMenuToggle}
+            />
+          </div>
+        </div>
+
+        {/* Mobile navigation */}
+        <div
+          className="
+            order-3
+            w-full
+            md:hidden
+          "
+        >
+          <NavigationMenu
+            isOpen={isMenuOpen}
+            onNavigate={handleNavigation}
+          />
         </div>
       </div>
     </nav>
