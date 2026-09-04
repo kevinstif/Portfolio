@@ -9,37 +9,51 @@ const SkillItem = ({
       className="
         flex
         items-start
-        gap-4
+        gap-3
         rounded-xl
         border
         border-border
         bg-base
-        p-4
+        p-3
         transition-all
         hover:border-primary
         hover:bg-primary/5
+        sm:gap-4
+        sm:p-4
       "
     >
       <div
         className="
           flex
-          h-12
-          w-12
+          h-10
+          w-10
           shrink-0
           items-center
           justify-center
           rounded-lg
           bg-surface
+          sm:h-12
+          sm:w-12
         "
       >
         <i
-          className={`${iconClass} text-3xl`}
+          className={`${iconClass} text-2xl sm:text-3xl`}
           aria-hidden="true"
         />
       </div>
 
       <div className="min-w-0 flex-1">
-        <div className="flex items-center justify-between gap-3">
+        <div
+          className="
+            flex
+            flex-col
+            gap-2
+            sm:flex-row
+            sm:items-center
+            sm:justify-between
+            sm:gap-3
+          "
+        >
           <h4 className="font-semibold text-text">
             {name}
           </h4>
@@ -47,6 +61,7 @@ const SkillItem = ({
           {experience && (
             <span
               className="
+                w-fit
                 whitespace-nowrap
                 rounded-full
                 bg-accent/10

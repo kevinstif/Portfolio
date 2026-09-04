@@ -17,12 +17,29 @@ const SkillsSection = () => {
         bg-base
       "
     >
-      <div className="mx-auto w-full max-w-7xl px-4 py-16">
+      <div
+        className="
+          mx-auto
+          w-full
+          max-w-7xl
+          px-4
+          py-20
+          sm:px-6
+          md:px-8
+        "
+      >
         <SectionTitle>Habilidades Técnicas</SectionTitle>
 
         {/* TECHNICAL SKILLS */}
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div
+          className="
+            grid
+            grid-cols-1
+            gap-6
+            lg:grid-cols-2
+          "
+        >
           {skillCategories.map((category) => (
             <SkillCategory
               key={category.title}
@@ -32,7 +49,10 @@ const SkillsSection = () => {
             >
               <div className="grid gap-3">
                 {category.skills.map((skill) => (
-                  <SkillItem key={skill.name} {...skill} />
+                  <SkillItem
+                    key={skill.name}
+                    {...skill}
+                  />
                 ))}
               </div>
             </SkillCategory>
@@ -47,9 +67,19 @@ const SkillsSection = () => {
             description="Nivel de comunicación en idiomas utilizados en entornos profesionales."
             icon="🌐"
           >
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+            <div
+              className="
+                grid
+                grid-cols-1
+                gap-3
+                md:grid-cols-2
+              "
+            >
               {languages.map((language) => (
-                <LanguageItem key={language.name} {...language} />
+                <LanguageItem
+                  key={language.name}
+                  {...language}
+                />
               ))}
             </div>
           </SkillCategory>

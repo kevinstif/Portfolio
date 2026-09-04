@@ -11,7 +11,8 @@ const SkillCategory = ({
         border
         border-border
         bg-surface
-        p-6
+        p-4
+        sm:p-6
       "
     >
       <div className="mb-6 flex items-start gap-4">
@@ -31,7 +32,7 @@ const SkillCategory = ({
           {icon}
         </div>
 
-        <div>
+        <div className="min-w-0">
           <h3 className="text-xl font-semibold text-text">
             {title}
           </h3>
