@@ -3,7 +3,6 @@ import ProfileImage from "../../atoms/ProfileImage";
 import image from "../../../assets/profile.avif";
 
 const HeroSection = () => {
-
   const greeting = "Hola, soy";
   const name = "Kevin Stif Sánchez Urbina";
   const title = "Bachiller en Ingeniería de Software";
@@ -26,14 +25,26 @@ const HeroSection = () => {
           max-w-7xl
           grid-cols-1
           items-center
-          gap-8
+          gap-10
           px-4
+          py-20
+          sm:px-6
           md:grid-cols-2
+          md:gap-12
+          md:px-8
+          md:py-0
         "
       >
-        <HeroContent greeting={greeting} name={name} title={title} />
+        <HeroContent
+          greeting={greeting}
+          name={name}
+          title={title}
+        />
 
-        <ProfileImage src={image} alt="Kevin Stif Sánchez Urbina" />
+        <ProfileImage
+          src={image}
+          alt="Kevin Stif Sánchez Urbina"
+        />
       </div>
     </section>
   );
