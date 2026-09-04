@@ -2,10 +2,9 @@ import ProfileImage from "../../atoms/ProfileImage";
 import image from "../../../assets/profile.avif";
 import SectionTitle from "../../atoms/SectionTitle";
 import AboutCard from "../../molecules/AboutCard";
+import { description } from "../../../data/about";
 
 const AboutSection = () => {
-  const description =
-    "Soy Bachiller en Ingeniería de Software y desarrollador especializado en Backend, con más de 2 años de experiencia construyendo APIs y soluciones escalables. He trabajado en el diseño y desarrollo de aplicaciones bajo diferentes enfoques arquitectónicos, incluyendo monolitos, monolitos modulares, microservicios y soluciones multi-tenant. Mi experiencia principal se centra en el ecosistema .NET y ASP.NET Core, complementada con más de un año de experiencia en desarrollo Frontend, lo que me permite comprender el desarrollo de aplicaciones de forma integral y aportar una visión más completa en la construcción de soluciones.";
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
