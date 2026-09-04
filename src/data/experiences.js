@@ -2,7 +2,7 @@ export const companyExperiences = [
   {
     title: "Desarrollador Full Stack",
     company: "Global Terra",
-    period: "Enero 2020 - Presente",
+    period: "Febrero 2025 - Presente",
     responsibilities:
       "Automatización de procesos de nómina mediante cálculos masivos de CTS y Utilidades. Implementación de reportes dinámicos y generación de certificados. Evolución de la arquitectura hacia microservicios y multi-tenancy híbrido, mejorando la escalabilidad y administración de múltiples clientes.",
   },
