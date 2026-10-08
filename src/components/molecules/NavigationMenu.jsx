@@ -11,12 +11,20 @@ const NavigationMenu = ({
       id="main-navigation"
       className={`
         w-full
-        items-center
-        justify-between
         md:order-1
         md:w-auto
         md:flex
-        ${isOpen ? "flex" : "hidden"}
+        ${
+          isOpen
+            ? "translate-y-0 opacity-100"
+            : "pointer-events-none -translate-y-2 opacity-0"
+        }
+        transition-all
+        duration-200
+        ease-out
+        md:translate-y-0
+        md:opacity-100
+        md:pointer-events-auto
       `}
     >
       <ul
@@ -25,20 +33,15 @@ const NavigationMenu = ({
           w-full
           flex-col
           gap-1
-          rounded-xl
-          border
-          border-border
-          bg-surface
-          p-4
+          py-3
           text-sm
           font-medium
+
           md:w-auto
           md:flex-row
           md:items-center
           md:gap-8
-          md:border-0
-          md:bg-transparent
-          md:p-0
+          md:py-0
         "
       >
         {navigationItems.map((item) => (

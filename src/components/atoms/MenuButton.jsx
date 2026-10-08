@@ -1,11 +1,18 @@
+import {
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+
 const MenuButton = ({ isOpen = false, onClick }) => {
   return (
     <button
       type="button"
       onClick={onClick}
       className="
+        relative
         inline-flex
-        h-10 w-10
+        h-10
+        w-10
         items-center
         justify-center
         rounded-lg
@@ -22,26 +29,51 @@ const MenuButton = ({ isOpen = false, onClick }) => {
       "
       aria-controls="main-navigation"
       aria-expanded={isOpen}
-      aria-label={isOpen ? "Cerrar menú principal" : "Abrir menú principal"}
+      aria-label={
+        isOpen
+          ? "Cerrar menú principal"
+          : "Abrir menú principal"
+      }
     >
       <span className="sr-only">
-        {isOpen ? "Cerrar menú principal" : "Abrir menú principal"}
+        {isOpen
+          ? "Cerrar menú principal"
+          : "Abrir menú principal"}
       </span>
 
-      <svg
-        className="h-6 w-6"
+      <Bars3Icon
+        className={`
+          absolute
+          h-6
+          w-6
+          transition-all
+          duration-200
+          ease-in-out
+          ${
+            isOpen
+              ? "rotate-90 scale-75 opacity-0"
+              : "rotate-0 scale-100 opacity-100"
+          }
+        `}
         aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeWidth="2"
-          d="M5 7h14M5 12h14M5 17h14"
-        />
-      </svg>
+      />
+
+      <XMarkIcon
+        className={`
+          absolute
+          h-6
+          w-6
+          transition-all
+          duration-200
+          ease-in-out
+          ${
+            isOpen
+              ? "rotate-0 scale-100 opacity-100"
+              : "-rotate-90 scale-75 opacity-0"
+          }
+        `}
+        aria-hidden="true"
+      />
     </button>
   );
 };

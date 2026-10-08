@@ -20,83 +20,39 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className="
-        fixed
-        top-0
-        inset-x-0
-        z-20
-        w-full
-        border-b
-        border-border
-        bg-surface
-        backdrop-blur
-      "
-    >
+    <nav className="fixed inset-x-0 top-0 z-20 w-full border-b border-border bg-surface backdrop-blur">
       <div
         className="
-          mx-auto
-          flex
-          max-w-7xl
-          flex-wrap
-          items-center
-          justify-between
-          px-4
-          py-3
-        "
+      mx-auto
+      flex
+      max-w-7xl
+      items-center
+      justify-between
+      px-4
+      py-3
+    "
       >
-        <Brand
-          src={logo}
-          alt="Kevin Stif"
-          name="Kevin Stif"
-        />
+        <Brand src={logo} alt="Kevin Stif" name="Kevin Stif" />
 
         {/* Desktop navigation */}
         <div className="hidden md:block md:order-1">
-          <NavigationMenu
-            isOpen={true}
-            onNavigate={handleNavigation}
-          />
+          <NavigationMenu isOpen={true} onNavigate={handleNavigation} />
         </div>
 
         {/* Controls */}
-        <div
-          className="
-            flex
-            items-center
-            gap-1
-            md:order-2
-          "
-        >
-          {/*
-            <LanguageSelector />
-          */}
-
+        <div className="flex items-center gap-1 md:order-2">
           <ThemeToggle />
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
-            <MenuButton
-              isOpen={isMenuOpen}
-              onClick={handleMenuToggle}
-            />
+            <MenuButton isOpen={isMenuOpen} onClick={handleMenuToggle} />
           </div>
         </div>
-
-        {/* Mobile navigation */}
-        <div
-          className="
-            order-3
-            w-full
-            md:hidden
-          "
-        >
-          <NavigationMenu
-            isOpen={isMenuOpen}
-            onNavigate={handleNavigation}
-          />
-        </div>
       </div>
+
+      {/* Mobile navigation */}
+      {isMenuOpen && (
+        <NavigationMenu isOpen={isMenuOpen} onNavigate={handleNavigation} />
+      )}
     </nav>
   );
 };
