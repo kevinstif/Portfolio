@@ -23,10 +23,11 @@ const ExperienceSection = () => {
         className="
           mx-auto
           w-full
-          max-w-md
+          max-w-7xl
           px-4
           py-16
-          md:max-w-7xl
+          sm:px-6
+          lg:px-8
         "
       >
         <SectionTitle>
@@ -37,18 +38,14 @@ const ExperienceSection = () => {
           className="
             grid
             grid-cols-1
-            gap-4
+            gap-8
             md:grid-cols-2
           "
         >
-          {/* COMPANY EXPERIENCE */}
-
           <ExperienceTimeline
             title="Experiencia en Compañía"
             experiences={companyExperiences}
           />
-
-          {/* FREELANCE EXPERIENCE */}
 
           <ExperienceTimeline
             title="Experiencia Freelance"

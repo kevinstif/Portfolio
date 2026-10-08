@@ -1,11 +1,6 @@
 import ExperiencePeriod from "../atoms/ExperiencePeriod";
 
-const ExperienceItem = ({
-  title,
-  period,
-  company,
-  responsibilities,
-}) => {
+const ExperienceItem = ({ title, period, company, responsibilities }) => {
   return (
     <div
       className="
@@ -51,7 +46,7 @@ const ExperienceItem = ({
       <div
         className="
           m-2
-          ml-8
+          ml-6
           flex
           w-full
           flex-col
@@ -60,23 +55,19 @@ const ExperienceItem = ({
           border
           border-border
           bg-surface
-          p-4
+          p-3
           shadow-md
+          sm:ml-8
+          sm:p-4
         "
       >
-        <div className="flex items-center gap-2">
-          <h3 className="text-lg font-semibold text-text">
-            {title}
-          </h3>
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-2">
+          <h3 className="text-lg font-semibold text-text">{title}</h3>
 
-          <ExperiencePeriod>
-            {period}
-          </ExperiencePeriod>
+          <ExperiencePeriod>{period}</ExperiencePeriod>
         </div>
 
-        <p className="text-sm text-accent">
-          {company}
-        </p>
+        <p className="text-sm text-accent">{company}</p>
 
         <p
           className="
