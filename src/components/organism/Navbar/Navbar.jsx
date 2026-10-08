@@ -8,6 +8,7 @@ import NavigationMenu from "../../molecules/NavigationMenu";
 
 import logo from "../../../assets/brand.png";
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -57,7 +58,7 @@ const Navbar = () => {
           activeSection={activeSection}
           isOpen={isMenuOpen}
           onNavigate={handleNavigation}
-          className="md:hidden animate__animated animate__fadeIn"
+          //className="md:hidden animate__animated animate__fadeIn"
         />
       )}
     </nav>

@@ -1,6 +1,7 @@
 import NavigationLink from "../atoms/NavigationLink";
 import { navigationItems } from "../../data/navigation";
 
+
 const NavigationMenu = ({
   isOpen = false,
   activeSection = "home",
