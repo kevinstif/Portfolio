@@ -24,7 +24,7 @@ const AcademicItem = ({
     >
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div className="flex items-start gap-4">
-          <div className="h-15 w-1 shrink-0 bg-accent" />
+          <div className="h-16 w-1 shrink-0 bg-accent" />
 
           <div className="flex flex-col">
             <div className="mt-1 flex flex-wrap items-center gap-2">

@@ -18,10 +18,11 @@ const AcademicSection = () => {
         className="
           mx-auto
           w-full
-          max-w-md
+          max-w-7xl
           px-4
           py-16
-          md:max-w-7xl
+          sm:px-6
+          lg:px-8
         "
       >
         <SectionTitle>Educación</SectionTitle>
