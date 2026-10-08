@@ -7,7 +7,7 @@ const NavigationLink = ({
   return (
     <a
       href={href}
-      onClick={onClick}
+      onClick={() => onClick(href.replace("#", ""))}
       aria-current={isActive ? "page" : undefined}
       className={`
         block

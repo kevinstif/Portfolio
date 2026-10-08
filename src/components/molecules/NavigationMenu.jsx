@@ -5,6 +5,7 @@ const NavigationMenu = ({
   isOpen = false,
   activeSection = "home",
   onNavigate,
+  className = "",
 }) => {
   return (
     <nav
@@ -25,6 +26,7 @@ const NavigationMenu = ({
         md:translate-y-0
         md:opacity-100
         md:pointer-events-auto
+        ${className}
       `}
     >
       <ul
@@ -48,9 +50,7 @@ const NavigationMenu = ({
           <li key={item.href}>
             <NavigationLink
               href={item.href}
-              isActive={
-                activeSection === item.href.replace("#", "")
-              }
+              isActive={activeSection === item.href.replace("#", "")}
               onClick={onNavigate}
             >
               {item.label}

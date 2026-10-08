@@ -10,12 +10,14 @@ import logo from "../../../assets/brand.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleMenuToggle = () => {
     setIsMenuOpen((current) => !current);
   };
 
-  const handleNavigation = () => {
+  const handleNavigation = (section) => {
+    setActiveSection(section);
     setIsMenuOpen(false);
   };
 
@@ -36,7 +38,7 @@ const Navbar = () => {
 
         {/* Desktop navigation */}
         <div className="hidden md:block md:order-1">
-          <NavigationMenu isOpen={true} onNavigate={handleNavigation} />
+          <NavigationMenu activeSection={activeSection} isOpen={true} onNavigate={handleNavigation} />
         </div>
 
         {/* Controls */}
@@ -51,7 +53,12 @@ const Navbar = () => {
 
       {/* Mobile navigation */}
       {isMenuOpen && (
-        <NavigationMenu isOpen={isMenuOpen} onNavigate={handleNavigation} />
+        <NavigationMenu
+          activeSection={activeSection}
+          isOpen={isMenuOpen}
+          onNavigate={handleNavigation}
+          className="md:hidden animate__animated animate__fadeIn"
+        />
       )}
     </nav>
   );
