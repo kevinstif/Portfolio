@@ -13,7 +13,7 @@ const Portfolio = () => {
 
   return (
     <div className="bg-background">
-      <Navbar />
+      <Navbar /> 
       <HeroSection />
       <GlowDivider />
       <AboutSection />
@@ -21,7 +21,7 @@ const Portfolio = () => {
       <SkillsSection />
       <GlowDivider />
       <ProjectSection />
-      <GlowDivider />
+      <GlowDivider />*
       <ExperienceSection />
       <GlowDivider />
       <AcademicSection />

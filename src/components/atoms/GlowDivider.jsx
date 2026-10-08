@@ -9,7 +9,6 @@ const GlowDivider = () => {
           via-primary-deep
           to-transparent
           blur-[6px]
-          animate-pulse
         "
       />
 
@@ -31,7 +30,6 @@ const GlowDivider = () => {
           via-primary
           to-transparent
           blur-[6px]
-          animate-pulse
         "
       />
     </div>

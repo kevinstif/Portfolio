@@ -58,7 +58,7 @@ const Navbar = () => {
           activeSection={activeSection}
           isOpen={isMenuOpen}
           onNavigate={handleNavigation}
-          //className="md:hidden animate__animated animate__fadeIn"
+          className="md:hidden animate__animated animate__fadeIn"
         />
       )}
     </nav>
